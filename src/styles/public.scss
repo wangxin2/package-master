@@ -1,0 +1,36 @@
+@import 'common-variables';
+
+[class*=' webgis-'],
+[class^='webgis-'] {
+  	box-sizing: border-box;
+}
+
+// fade - 渐隐效果
+.webgis-transition-fade {
+	&-enter-active,
+	&-leave-active {
+		transition: all 0.3s;
+	}
+	&-enter,
+	&-leave-to {
+		opacity: 0;
+	}
+}
+
+.webgis-absolute-layer {
+	position: absolute;
+	z-index: 1;
+}
+
+.webgis-box-shadow-default {
+ 	box-shadow: $box-shadow-default;
+}
+
+.webgis-box-shadow-base {
+ 	box-shadow: $box-shadow-base;
+}
+
+.webgis-list-unstyled {
+	list-style-type: none;
+	padding-left: 0;
+}
