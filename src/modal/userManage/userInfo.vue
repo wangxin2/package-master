@@ -15,7 +15,7 @@
 					<el-form-item label="联系电话" prop="phone" :rules="[validator.required, validator.phone]">
 						<el-input v-model="detailList.phone"></el-input>
 					</el-form-item>
-					<el-form-item label="性别" prop="sex" :rules="[validator.required]">
+					<el-form-item label="性别33" prop="sex" :rules="[validator.required]">
 						<gm-dic-select clearable :data="dicArr" filterable ref="type" type="性别" v-model="detailList.sex" placeholder="请选择"></gm-dic-select>
 					</el-form-item>
 					<el-form-item label="标签类型" prop="label">

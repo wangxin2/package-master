@@ -38,7 +38,7 @@
 			v-loading="listLoading" 
 			class="table"
 			>
-				<el-table-column prop="loginName" label="登录名"></el-table-column>
+				<el-table-column prop="loginName" label="登录名11"></el-table-column>
 				<el-table-column prop="realName" label="姓名"></el-table-column>
 				<el-table-column prop="userInfo.phone" label="电话" ></el-table-column>
 				<el-table-column prop="userInfo.label" label="标签类型">
@@ -58,7 +58,7 @@
 						</el-tooltip> -->
                         <el-button type="text" @click="modify(scope.$index, scope.row)" title="修改"><i class="el-icon-edit-outline" ></i></el-button>
                         <el-button type="text" @click="deleteRow(scope.$index, scope.row)" title="删除"><i class="el-icon-delete"></i></el-button>
-						<el-button type="text" @click="applyRole(scope.$index, scope.row)" title="角色分配"><i class="el-icon-share"></i></el-button>
+						<el-button type="text" @click="applyRole(scope.$index, scope.row)" title="角色分配22"><i class="el-icon-share"></i></el-button>
 					</template>
 				</el-table-column>
 			</el-table>
@@ -178,6 +178,7 @@ export default {
         },
 		// 新增用户
         add() {
+			debugger
 			this.gmdisabled = false
 			this.userDetailModal.isShow = true
 			this.userDetailModal.title = '新增用户'

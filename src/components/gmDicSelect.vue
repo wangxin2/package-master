@@ -48,10 +48,13 @@ export default {
     	}
     },
     created () {
+        debugger
+        this.binddata
     	// 初始化数据
         // 如果有字典类型 则获取到字典值
         if (this.type) {
             if (this.data) {
+                debugger
                 const dicArr = this.data.find(item => {
                     return item.label === this.type
                 })
